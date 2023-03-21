@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"bluepill_01_led_blink\startup_stm32f103xb.o"
+"bluepill_01_led_blink\main.o"
+"bluepill_01_led_blink\stm32f1xx_it.o"
+"bluepill_01_led_blink\stm32f1xx_hal_msp.o"
+"bluepill_01_led_blink\stm32f1xx_hal_gpio_ex.o"
+"bluepill_01_led_blink\stm32f1xx_hal_tim.o"
+"bluepill_01_led_blink\stm32f1xx_hal_tim_ex.o"
+"bluepill_01_led_blink\stm32f1xx_hal.o"
+"bluepill_01_led_blink\stm32f1xx_hal_rcc.o"
+"bluepill_01_led_blink\stm32f1xx_hal_rcc_ex.o"
+"bluepill_01_led_blink\stm32f1xx_hal_gpio.o"
+"bluepill_01_led_blink\stm32f1xx_hal_dma.o"
+"bluepill_01_led_blink\stm32f1xx_hal_cortex.o"
+"bluepill_01_led_blink\stm32f1xx_hal_pwr.o"
+"bluepill_01_led_blink\stm32f1xx_hal_flash.o"
+"bluepill_01_led_blink\stm32f1xx_hal_flash_ex.o"
+"bluepill_01_led_blink\stm32f1xx_hal_exti.o"
+"bluepill_01_led_blink\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Bluepill_01_LED_blink\Bluepill_01_LED_blink.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bluepill_01_LED_blink.map" -o Bluepill_01_LED_blink\Bluepill_01_LED_blink.axf

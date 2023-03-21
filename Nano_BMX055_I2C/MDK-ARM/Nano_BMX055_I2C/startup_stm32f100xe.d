@@ -1,0 +1,1 @@
+nano_bmx055_i2c\startup_stm32f100xe.o: startup_stm32f100xe.s

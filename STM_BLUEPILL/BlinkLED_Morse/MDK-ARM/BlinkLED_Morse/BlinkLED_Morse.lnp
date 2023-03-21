@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"blinkled_morse\startup_stm32f103xb.o"
+"blinkled_morse\main.o"
+"blinkled_morse\stm32f1xx_it.o"
+"blinkled_morse\stm32f1xx_hal_msp.o"
+"blinkled_morse\stm32f1xx_hal_gpio_ex.o"
+"blinkled_morse\stm32f1xx_hal_tim.o"
+"blinkled_morse\stm32f1xx_hal_tim_ex.o"
+"blinkled_morse\stm32f1xx_hal.o"
+"blinkled_morse\stm32f1xx_hal_rcc.o"
+"blinkled_morse\stm32f1xx_hal_rcc_ex.o"
+"blinkled_morse\stm32f1xx_hal_gpio.o"
+"blinkled_morse\stm32f1xx_hal_dma.o"
+"blinkled_morse\stm32f1xx_hal_cortex.o"
+"blinkled_morse\stm32f1xx_hal_pwr.o"
+"blinkled_morse\stm32f1xx_hal_flash.o"
+"blinkled_morse\stm32f1xx_hal_flash_ex.o"
+"blinkled_morse\stm32f1xx_hal_exti.o"
+"blinkled_morse\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "BlinkLED_Morse\BlinkLED_Morse.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BlinkLED_Morse.map" -o BlinkLED_Morse\BlinkLED_Morse.axf

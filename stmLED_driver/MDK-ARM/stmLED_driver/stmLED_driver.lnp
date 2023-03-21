@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"stmled_driver\startup_stm32f103xb.o"
+"stmled_driver\main.o"
+"stmled_driver\stm32f1xx_it.o"
+"stmled_driver\stm32f1xx_hal_msp.o"
+"stmled_driver\stm32f1xx_hal_gpio_ex.o"
+"stmled_driver\stm32f1xx_hal_spi.o"
+"stmled_driver\stm32f1xx_hal.o"
+"stmled_driver\stm32f1xx_hal_rcc.o"
+"stmled_driver\stm32f1xx_hal_rcc_ex.o"
+"stmled_driver\stm32f1xx_hal_gpio.o"
+"stmled_driver\stm32f1xx_hal_dma.o"
+"stmled_driver\stm32f1xx_hal_cortex.o"
+"stmled_driver\stm32f1xx_hal_pwr.o"
+"stmled_driver\stm32f1xx_hal_flash.o"
+"stmled_driver\stm32f1xx_hal_flash_ex.o"
+"stmled_driver\stm32f1xx_hal_exti.o"
+"stmled_driver\stm32f1xx_hal_tim.o"
+"stmled_driver\stm32f1xx_hal_tim_ex.o"
+"stmled_driver\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "stmLED_driver\stmLED_driver.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "stmLED_driver.map" -o stmLED_driver\stmLED_driver.axf

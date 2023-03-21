@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"nano_tim_interrupt\startup_stm32f100xe.o"
+"nano_tim_interrupt\main.o"
+"nano_tim_interrupt\stm32f1xx_it.o"
+"nano_tim_interrupt\stm32f1xx_hal_msp.o"
+"nano_tim_interrupt\stm32f1xx_hal_gpio_ex.o"
+"nano_tim_interrupt\stm32f1xx_hal_tim.o"
+"nano_tim_interrupt\stm32f1xx_hal_tim_ex.o"
+"nano_tim_interrupt\stm32f1xx_hal.o"
+"nano_tim_interrupt\stm32f1xx_hal_rcc.o"
+"nano_tim_interrupt\stm32f1xx_hal_rcc_ex.o"
+"nano_tim_interrupt\stm32f1xx_hal_gpio.o"
+"nano_tim_interrupt\stm32f1xx_hal_dma.o"
+"nano_tim_interrupt\stm32f1xx_hal_cortex.o"
+"nano_tim_interrupt\stm32f1xx_hal_pwr.o"
+"nano_tim_interrupt\stm32f1xx_hal_flash.o"
+"nano_tim_interrupt\stm32f1xx_hal_flash_ex.o"
+"nano_tim_interrupt\stm32f1xx_hal_exti.o"
+"nano_tim_interrupt\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Nano_TIM_interrupt\Nano_TIM_interrupt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Nano_TIM_interrupt.map" -o Nano_TIM_interrupt\Nano_TIM_interrupt.axf

@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"nano_bmx055_i2c\startup_stm32f100xe.o"
+"nano_bmx055_i2c\main.o"
+"nano_bmx055_i2c\stm32f1xx_it.o"
+"nano_bmx055_i2c\stm32f1xx_hal_msp.o"
+"nano_bmx055_i2c\stm32f1xx_hal_gpio_ex.o"
+"nano_bmx055_i2c\stm32f1xx_hal_spi.o"
+"nano_bmx055_i2c\stm32f1xx_hal.o"
+"nano_bmx055_i2c\stm32f1xx_hal_rcc.o"
+"nano_bmx055_i2c\stm32f1xx_hal_rcc_ex.o"
+"nano_bmx055_i2c\stm32f1xx_hal_gpio.o"
+"nano_bmx055_i2c\stm32f1xx_hal_dma.o"
+"nano_bmx055_i2c\stm32f1xx_hal_cortex.o"
+"nano_bmx055_i2c\stm32f1xx_hal_pwr.o"
+"nano_bmx055_i2c\stm32f1xx_hal_flash.o"
+"nano_bmx055_i2c\stm32f1xx_hal_flash_ex.o"
+"nano_bmx055_i2c\stm32f1xx_hal_exti.o"
+"nano_bmx055_i2c\stm32f1xx_hal_tim.o"
+"nano_bmx055_i2c\stm32f1xx_hal_tim_ex.o"
+"nano_bmx055_i2c\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Nano_BMX055_I2C\Nano_BMX055_I2C.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Nano_BMX055_I2C.map" -o Nano_BMX055_I2C\Nano_BMX055_I2C.axf

@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"sp1_uarttest\startup_stm32f103xb.o"
+"sp1_uarttest\main.o"
+"sp1_uarttest\stm32f1xx_it.o"
+"sp1_uarttest\stm32f1xx_hal_msp.o"
+"sp1_uarttest\stm32f1xx_hal_gpio_ex.o"
+"sp1_uarttest\stm32f1xx_hal_tim.o"
+"sp1_uarttest\stm32f1xx_hal_tim_ex.o"
+"sp1_uarttest\stm32f1xx_hal_uart.o"
+"sp1_uarttest\stm32f1xx_hal.o"
+"sp1_uarttest\stm32f1xx_hal_rcc.o"
+"sp1_uarttest\stm32f1xx_hal_rcc_ex.o"
+"sp1_uarttest\stm32f1xx_hal_gpio.o"
+"sp1_uarttest\stm32f1xx_hal_dma.o"
+"sp1_uarttest\stm32f1xx_hal_cortex.o"
+"sp1_uarttest\stm32f1xx_hal_pwr.o"
+"sp1_uarttest\stm32f1xx_hal_flash.o"
+"sp1_uarttest\stm32f1xx_hal_flash_ex.o"
+"sp1_uarttest\stm32f1xx_hal_exti.o"
+"sp1_uarttest\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SP1_uarttest\SP1_uarttest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SP1_uarttest.map" -o SP1_uarttest\SP1_uarttest.axf

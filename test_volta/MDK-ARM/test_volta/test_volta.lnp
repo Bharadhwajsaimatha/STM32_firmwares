@@ -1,0 +1,27 @@
+--cpu Cortex-M0+
+"test_volta\startup_stm32l053xx.o"
+"test_volta\main.o"
+"test_volta\stm32l0xx_it.o"
+"test_volta\stm32l0xx_hal_msp.o"
+"test_volta\stm32l0xx_hal_i2c.o"
+"test_volta\stm32l0xx_hal_i2c_ex.o"
+"test_volta\stm32l0xx_hal.o"
+"test_volta\stm32l0xx_hal_rcc.o"
+"test_volta\stm32l0xx_hal_rcc_ex.o"
+"test_volta\stm32l0xx_hal_flash_ramfunc.o"
+"test_volta\stm32l0xx_hal_flash.o"
+"test_volta\stm32l0xx_hal_flash_ex.o"
+"test_volta\stm32l0xx_hal_gpio.o"
+"test_volta\stm32l0xx_hal_dma.o"
+"test_volta\stm32l0xx_hal_pwr.o"
+"test_volta\stm32l0xx_hal_pwr_ex.o"
+"test_volta\stm32l0xx_hal_cortex.o"
+"test_volta\stm32l0xx_hal_tim.o"
+"test_volta\stm32l0xx_hal_tim_ex.o"
+"test_volta\stm32l0xx_hal_uart.o"
+"test_volta\stm32l0xx_hal_uart_ex.o"
+"test_volta\system_stm32l0xx.o"
+--library_type=microlib --strict --scatter "test_volta\test_volta.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "test_volta.map" -o test_volta\test_volta.axf

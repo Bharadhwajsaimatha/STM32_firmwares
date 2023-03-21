@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"nano_dma_poll_itr_dma\startup_stm32f100xe.o"
+"nano_dma_poll_itr_dma\main.o"
+"nano_dma_poll_itr_dma\stm32f1xx_it.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_msp.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_gpio_ex.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_tim.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_tim_ex.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_uart.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_rcc.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_rcc_ex.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_gpio.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_dma.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_cortex.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_pwr.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_flash.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_flash_ex.o"
+"nano_dma_poll_itr_dma\stm32f1xx_hal_exti.o"
+"nano_dma_poll_itr_dma\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Nano_DMA_Poll_Itr_DMA\Nano_DMA_Poll_Itr_DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Nano_DMA_Poll_Itr_DMA.map" -o Nano_DMA_Poll_Itr_DMA\Nano_DMA_Poll_Itr_DMA.axf
